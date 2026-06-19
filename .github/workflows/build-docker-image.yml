@@ -45,7 +45,6 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64
-          # ✨ 修改：这里使用了转换后的小写变量 env.IMAGE_OWNER
           tags: |
             ghcr.io/${{ env.IMAGE_OWNER }}/peny2026:latest
           labels: |
